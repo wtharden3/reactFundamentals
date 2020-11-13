@@ -80,6 +80,14 @@ ul {
   margin-top: 0.8em !important;
 }
 
+.textAlignLeft{
+  text-align: left;
+}
+
+.rightAlign{
+  text-align: left;
+}
+
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
