@@ -29,6 +29,10 @@ const SampleEffect = () => {
         setTimerRunning(false);
       }, 2000)
     }
+    return () => {
+      window.clearTimeout(timer);
+      console.log('the timer was cleaned up', Date.now()/1000)
+    }
   })
 
   let buttonHandler = () => {
@@ -37,9 +41,15 @@ const SampleEffect = () => {
     }
   }
 
+  let headerHover = () => {
+    if(!timerRunning){
+      setTimerRunning(true)
+    }
+  }
+
   return(
     <div style={{border: '1px dashed black'}}>
-      <h2>This componenet demoes an effect</h2>
+      <h2 onMouseOver={headerHover}>This componenet demoes an effect</h2>
       <button onClick={buttonHandler}>Click me to start an effect in the console.</button>
     </div>
   )
