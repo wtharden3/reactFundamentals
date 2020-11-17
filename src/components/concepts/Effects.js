@@ -46,8 +46,8 @@ const SampleEffect = () => {
   });
 
   useEffect(() => {
-    if(timerRunning){
-      console.log('This paint needs some happy trees')
+    if (timerRunning) {
+      console.log('This paint needs some happy trees');
     }
   }, [timerRunning]);
 
