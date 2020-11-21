@@ -1,4 +1,6 @@
 import TimerApp from './TimerApp';
+import ClockApp from './ClockApp';
+import StopWatchApp from './StopWatchApp';
 
 const TimePiecesApp = () => {
   return(
@@ -6,6 +8,9 @@ const TimePiecesApp = () => {
       <div className="mainDiv">
         <TimerApp />
         <hr />
+        <ClockApp />
+        <hr />
+        <StopWatchApp />
       </div>
     </div>
   )
