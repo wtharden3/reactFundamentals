@@ -16,7 +16,7 @@ const ClockApp = () => {
 
     return () => clearInterval(interval);
   }, []);
-  
+
   return (
     <div>
       <h1 className="section-title">React Clock</h1>
